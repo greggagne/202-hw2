@@ -74,6 +74,8 @@ public class Snowman {
 	public static void main(String[] args) {
 		Snowman game = new Snowman();
 
+		game.drawSnowman_6();
+
 		try {
 			game.readWords("words.txt");
 			String word = game.getWord();
@@ -86,8 +88,62 @@ public class Snowman {
 		} catch (FileNotFoundException fnf) {
 			System.err.println("words.txt file Not Found");
 		}
-
-		
 	}
 
+	public void drawSnowman_6() {
+		// draws a snowman with 6 features
+
+		System.out.println("     _|_ _|_");
+		System.out.println("        O");
+		System.out.println("      ~~~~~");
+		System.out.println("       ( )");
+		System.out.println("      (   )");
+		System.out.println("     (     )");
+	}
+
+	public void drawSnowman_5() {
+		// draws a snowman with 5 features
+
+		System.out.println("        O");
+		System.out.println("      ~~~~~");
+		System.out.println("       ( )");
+		System.out.println("      (   )");
+		System.out.println("     (     )");
+	}
+
+	public void drawSnowman_4() {
+		// draws a snowman with 4 features
+
+		System.out.println("      ~~~~~");
+		System.out.println("       ( )");
+		System.out.println("      (   )");
+		System.out.println("     (     )");
+	}
+
+	public void drawSnowman_3() {
+		// draws a snowman with 3 features
+
+		System.out.println("       ( )");
+		System.out.println("      (   )");
+		System.out.println("     (     )");
+	}
+
+	public void drawSnowman_2() {
+		// draws a snowman with 2 features
+
+		System.out.println("      (   )");
+		System.out.println("     (     )");
+	}
+
+	public void drawSnowman_1() {
+		// draws a snowman with 1 feature
+
+		System.out.println("     (     )");
+	}
+
+	public void drawSnowman_0() {
+		// draws a snowman with 0 features
+
+		System.out.println(" ....... ");
+	}
 }
