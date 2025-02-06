@@ -37,7 +37,7 @@ public interface Set<T>
     /**
      * Removes the specified element from the set.
      */
-    public void remove(T element);
+    public boolean remove(T element);
 
     /** 
      * Creates a new set that combines the contents if this
